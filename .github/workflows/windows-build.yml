@@ -28,7 +28,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Build Windows executable
-        run: pyinstaller --onefile main.py --add-data "C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64\\Lib\\site-packages\\emoji\\unicode_codes\\emoji.json;emoji/unicode_codes"
+        run: pyinstaller --onefile main.py
 
       - name: Generate release tag for Windows
         id: tag-windows
